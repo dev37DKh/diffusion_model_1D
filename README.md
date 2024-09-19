@@ -6,7 +6,7 @@
 The 1D heat diffusion equation describes the transfer of heat along a 1D spatial domain (like a rod) over time. The heat equation is derived from the law of thermal conduction, which states that heat flows from regions of higher temperature to regions of lower temperature, and the conservation of energy.
 
 ## Mathematical Formulation
-The 1D heat equation is a partial differential equation (PDE) given by:
+$ The 1D heat equation is a partial differential equation (PDE) given by:
 
 \[
 \frac{\partial T(x,t)}{\partial t} = \alpha \frac{\partial^2 T(x,t)}{\partial x^2}
@@ -60,5 +60,5 @@ To solve this numerically:
 1. Initialize the temperature at each grid point based on the initial condition \(T(x,0)\).
 2. Apply the boundary conditions at the endpoints \(T(0,t)\) and \(T(L,t)\).
 3. Iteratively update the temperature at each time step using the finite difference scheme.
-
+$
 This method is implemented in Python using libraries like CasADi, Numpy, and Matplotlib for visualization.
